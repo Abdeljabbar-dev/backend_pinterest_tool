@@ -10,7 +10,7 @@ app.use(express.json());
 
 // Simple login simulation
 const USERS = [{ username: "admin", password: "Admin@Pin2025" }];
-const port = 8000 
+const port = const PORT = process.env.PORT || 8000;
 
 app.post("/login", (req, res) => {
     const { username, password } = req.body;
